@@ -10,14 +10,14 @@ function ju_enqueue(){
         [],  
         $ver
     );
-    wp_register_style( 'ju_bootstrap', $uri . '/assets/css/bootstrap.css', [] );
-    wp_register_style( 'ju_style', $uri . '/assets/css/style.css', [] );
-    wp_register_style( 'ju_dark', $uri . '/assets/css/dark.css', [] );
-    wp_register_style( 'ju_font_icons', $uri . '/assets/css/font-icons.css', [] );
-    wp_register_style( 'ju_animate', $uri . '/assets/css/animate.css', [] );
-    wp_register_style( 'ju_magnific_popup', $uri . '/assets/css/magnific-popup.css', []);
-    wp_register_style( 'ju_responsive', $uri . '/assets/css/responsive.css', [] );
-    wp_register_style( 'ju_custom', $uri . '/assets/css/custom.css', [] );
+    wp_register_style( 'ju_bootstrap', $uri . '/assets/css/bootstrap.css', [], $ver );
+    wp_register_style( 'ju_style', $uri . '/assets/css/style.css', [], $ver );
+    wp_register_style( 'ju_dark', $uri . '/assets/css/dark.css', [], $ver );
+    wp_register_style( 'ju_font_icons', $uri . '/assets/css/font-icons.css', [], $ver );
+    wp_register_style( 'ju_animate', $uri . '/assets/css/animate.css', [], $ver );
+    wp_register_style( 'ju_magnific_popup', $uri . '/assets/css/magnific-popup.css', [], $ver);
+    wp_register_style( 'ju_responsive', $uri . '/assets/css/responsive.css', [], $ver );
+    wp_register_style( 'ju_custom', $uri . '/assets/css/custom.css', [], $ver );
 
     wp_enqueue_style( 'ju_google_fonts' );
     wp_enqueue_style( 'ju_bootstrap' );
@@ -35,8 +35,8 @@ function ju_enqueue(){
     //     'a.more-link{ color: ' . $read_more_color . '; border-color: '. $read_more_color. '; }'
     // );
 
-    wp_register_script( 'ju_plugins', $uri . '/assets/js/plugins.js', [], true );
-    wp_register_script( 'ju_functions', $uri . '/assets/js/functions.js', [], true );
+    wp_register_script( 'ju_plugins', $uri . '/assets/js/plugins.js', [], $ver, true );
+    wp_register_script( 'ju_functions', $uri . '/assets/js/functions.js', [], $ver, true );
 
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'ju_plugins' );

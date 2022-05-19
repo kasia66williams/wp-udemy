@@ -2732,6 +2732,7 @@ body.side-panel-left.side-push-panel.stretched #header.sticky-header .container 
 
 body.device-touch #side-panel .side-panel-wrap { overflow-y: scroll; }
 
+
 #side-panel .widget {
 	margin-top: 40px;
 	padding-top: 40px;
@@ -2739,12 +2740,15 @@ body.device-touch #side-panel .side-panel-wrap { overflow-y: scroll; }
 	border-top: 1px solid #E5E5E5;
 }
 
+
 #side-panel .widget:first-child {
 	padding-top: 0;
 	border-top: 0;
 	margin: 0;
 }
-
+.widget ul {
+	list-style-type: none;
+}
 body.side-panel-open #side-panel { right: 0; }
 
 body.side-panel-left.side-panel-open #side-panel {
